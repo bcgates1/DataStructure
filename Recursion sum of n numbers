@@ -1,0 +1,14 @@
+
+void main() {
+  
+  int num=10;
+  print('Sum of $num natural number is ${sum(num)}');
+}
+
+sum(limit) {
+  if (limit == 1) {
+    return 1;
+  } else {
+    return limit + sum(limit - 1);
+  }
+}
